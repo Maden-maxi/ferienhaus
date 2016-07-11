@@ -1,0 +1,57 @@
+.month
+	.month__name März
+	.month__calendar
+		.month__row
+			each dayWeek in ['S', 'M', 'D', 'M', 'D', 'F', 'S']
+				if(dayWeek == 'S')
+					.month__weekday.month__weekday_weekend= dayWeek
+				else
+					.month__weekday= dayWeek
+		.month__row
+			.month__weekday.month__weekday_weekend
+			.month__weekday
+			.month__weekday 1
+			.month__weekday 2
+			.month__weekday 3
+			.month__weekday 4
+			.month__weekday.month__weekday_weekend 5
+		.month__row
+			.month__weekday.month__weekday_weekend.reserved 6
+			.month__weekday 7
+			.month__weekday 8
+			.month__weekday 9
+			.month__weekday 10
+			.month__weekday 11
+			.month__weekday.month__weekday_weekend 12
+		.month__row
+			.month__weekday.month__weekday_weekend 13
+			.month__weekday 14
+			.month__weekday 15
+			.month__weekday 16
+			.month__weekday 17
+			.month__weekday 18
+			.month__weekday.month__weekday_weekend 19
+		.month__row
+			.month__weekday.month__weekday_weekend.discount 20
+			.month__weekday.discount 21
+			.month__weekday.discount 22
+			.month__weekday.discount 23
+			.month__weekday.discount 24
+			.month__weekday.discount 25
+			.month__weekday.month__weekday_weekend.discount 26
+		.month__row
+			.month__weekday.month__weekday_weekend.discount 27
+			.month__weekday.discount 28
+			.month__weekday.discount 29
+			.month__weekday.discount 30
+			.month__weekday.discount 31
+			.month__weekday
+			.month__weekday.month__weekday_weekend
+		.month__row
+			.month__weekday.month__weekday_weekend
+			.month__weekday
+			.month__weekday
+			.month__weekday
+			.month__weekday
+			.month__weekday
+			.month__weekday.month__weekday_weekend

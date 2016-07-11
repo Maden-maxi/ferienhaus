@@ -1,0 +1,244 @@
+/*Stage container*/
+.entry-content.popup
+	.section-title_calendar
+		display block
+.mfp-close
+	right 54px
+	font 58px 'Times New Roman', serif
+	&-btn-in &
+		color red
+.popup
+	max-width 980px
+	margin auto
+	&__header
+		display flex
+		justify-content space-between
+		align-items center
+		a
+			color black
+	.section-title_calendar
+		display none
+	//calendar
+	table
+		width 100%
+		border-collapse collapse
+	caption, h2 strong
+		text-align left
+		color $titleColor
+		font 28px $circeB,Arial,sans-serif
+		text-transform uppercase
+		margin 20px 20px 20px 20px
+		text-transform none
+	thead
+		border-bottom 1px solid #000
+	th
+		font 20px $circeB,Arial,sans-serif
+	td
+		font 16px $circeL,Arial,sans-serif
+	th,td
+		text-align center
+		vertical-align middle 
+		width 25%
+	&-close
+		position absolute
+		right 3.8vw
+		display none
+	&-wrapper
+		//position fixed
+		top 0
+		left 0
+		z-index 99999
+		width 100%
+		overflow-y scroll
+		background-color #fff
+		&_calendar
+			.popup .section-title_calendar
+				display block
+		.jspVerticalBar
+			width 13px
+			top 10vh
+			right 5vw
+			height 70%
+		.jspDrag
+			background-color #b3b3b3
+		.jspTrack
+			border-color #e6e6e6
+.connected-carousels
+	.stage
+		display flex
+		position relative
+		&-aside
+			display flex
+			flex-flow column wrap
+			align-items center
+			flex 1 0 300px
+			padding 30px
+			background #242424
+			&__title
+				align-self flex-start
+				font 20px $circeB,sans-serif
+				color #dfdfdf
+				
+			&__list
+				padding-left 20px
+				.mailto
+					font 20px $circeR,sans-serif
+					color #dfdfdf
+				.fa
+					text-decoration none
+					margin-right 20px
+					color #999
+			&__item
+				display inline-flex
+				margin-bottom 10px
+				font 20px $circeR,sans-serif
+				color #dfdfdf
+				&_address
+					font 16px $circeL,sans-serif
+					.fa
+						margin-right 28px
+				&:hover
+					color $hoverColor
+				&:hover .fa
+					color $hoverColor
+				&:hover .mailto
+					color $hoverColor !important
+			&__ico
+				width 27px
+	/** Navigation container **/
+	.navigation
+		width auto
+		position relative
+	/** Shared carousel styles **/
+	.carousel-popup
+		flex 3 0 600px
+		overflow hidden
+		position relative
+		ul
+			width 20000em
+			position relative
+			list-style-type none
+			margin 0
+		li
+			float left
+			
+	/** Stage carousel specific styles **/
+	.carousel-stage
+		height $hView=400px
+		margin-right 5px
+		box-shadow 0 0 2px #999
+		img
+			width 656.25px
+			height $hView
+	/** Navigation carousel specific styles **/
+	.carousel-navigation
+		ul
+			margin-top 2.5px
+		li
+			cursor pointer
+			img
+				display block
+				size 190px 120px
+				border 2.5px solid #fff
+		li.active img
+			border-color #ccc
+	/** Stage carousel controls **/
+	.prev-stage,.next-stage
+		display flex
+		align-items center
+		text-decoration none
+		position absolute
+		top 0
+		width 305px
+		height 410px
+		font-size 40px
+		color $hoverColor
+		span
+			display none
+			position absolute
+			top 50%
+			size 30px
+			text-align center
+			background #4e443c
+			color #fff
+			text-decoration none
+			text-shadow 0 0 1px #000
+			font 24px/27px Arial,sans-serif
+			border-radius 30px
+			box-shadow 0 0 2px #999
+		&:hover span
+			display block
+	.prev-stage
+		left 0
+		justify-content flex-start
+		span
+			left 20px
+	.next-stage
+		right 325px
+		justify-content flex-end
+		span
+			right 20px
+	.prev-stage.inactive,.next-stage.inactive
+		display none
+	/** Navigation carousel controls **/
+	.prev-navigation,.next-navigation
+		display block
+		position absolute
+		text-decoration none
+		color $hoverColor
+		&.inactive
+			opacity .5
+			cursor default
+	.prev-navigation
+		left -30px
+		top 30px
+	.next-navigation
+		right -31px
+		top 30px
+.room-content
+	display flex
+	justify-content center
+	&__col
+		flex 1 0 300px
+		&_double
+			display flex
+			flex-flow column
+			justify-content space-between
+.description-block
+	&__wrapper
+		padding 30px
+		.section-title
+			margin 40px 0
+	li
+		display none
+		padding 20px 0
+		&.active
+			display block
+.rooms-nav
+	display flex
+	width 100%
+	flex-flow row wrap
+	justify-content center
+	align-items center
+	margin 40px 0
+	&__item
+		display flex
+		justify-content center
+		margin 5px
+		flex 1 0 112px
+	&__link
+		display inline-flex
+		justify-content center
+		align-items center
+		size 100% 50px
+		color $titleColor
+		font 16px $circeB,sans-serif
+		text-align center
+		text-decoration none
+		border 2px solid $titleColor
+		transition all 0.3s
+		&:hover, &_active
+			color #fff
+			border 2px solid $hoverColor
+			background-color $hoverColor
+			

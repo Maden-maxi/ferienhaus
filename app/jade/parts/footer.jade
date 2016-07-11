@@ -1,0 +1,15 @@
+- var widget = {Rechtliches: 'Wir weisen Sie ausdrücklich darauf hin, dass wir für die Inhalte von Seiten, auf die von hier verwiesen wird (weiterführende Links) und die nicht zu unserem Angebot gehören, keinerlei Haftung übernehmen. Wir distanzieren uns von deren Inhalten.',Copyright: 'Alle Inhalte unserer Webpräsenz unterliegen dem Urheberrecht. Weder Text, Grafiken, Fotos noch sonstige Inhalte dürfen ohne unsere ausdrückliche schriftliche Genehmigung anderweitig verwendet werden. Die Rechte aller erwähnten Marken, Warenzeichen oder Logos gehören den jeweiligen Eigentümern.',Linksetzung: 'Links auf unsere Internetpräsenzen sind stets so zu setzen, dass die jeweilige Startseite aufgerufen wird. Die Einbindung in Frames anderer Präsenzen ist nicht gestattet.',Bildnachweise: '<ul><li>Jeschken: Peter Irmer </li><li>O-See: Zittauer Tourismusverband Wald im </li>\n<li>Nebel: Hans Gruber Bilder der alten</li>\n<li>Ziegelei: Walter Spantig</li></ul>'}
+//-var contact = {'<i class="fa fa-marker-map"></i>': '02365 Zittau. Familie Spantig Zittauer-Platz 1', '<i class="fa fa-envelope"></i>':'info@alte-ziegelei.de','<i class="fa fa-phone"></i>':'03551/947324'};
+//-img.map(src="../img/map.jpg", alt="map")
+#map.map.wow
+footer#contacts
+	ul.widget
+		each dd,dt in widget
+			li.widget__wrapper.wow.fadeIn
+				dt.widget__title!= dt+':'
+				dd.widget__text!= dd
+	address.wow.fadeInDown
+		ul.contact
+			li.contact__info!= '<i class="fa fa-map-marker"></i> An der Ziegelei 5, 02763 Zittau / OT Hartau'
+			li.contact__info!= '<i class="fa fa-envelope"></i>info@alte-ziegelei.de'
+			li.contact__info!= '<i class="fa fa-phone"></i>03551/947324'

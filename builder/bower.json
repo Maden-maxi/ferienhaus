@@ -1,0 +1,45 @@
+{
+  "name": "ferienhaus",
+  "description": "0.0.0",
+  "main": "index.js",
+  "authors": [
+    "Denys Dnyschenko"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "font-awesome": "fontawesome#^4.6.3",
+    "slick-carousel": "^1.6.0",
+    "jquery-touchswipe": "^1.6.18",
+    "jcarousel": "^0.3.4",
+    "magnific-popup": "^1.1.0",
+    "animate.css": "^3.5.2",
+    "wow": "wow.js#^1.1.2",
+    "malihu-custom-scrollbar-plugin": "^3.1.4"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "css/font-awesome.css",
+        "scss/font-awesome.scss"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.css",
+        "slick/slick-theme.css",
+        "slick/slick.js"
+      ]
+    }
+  }
+}

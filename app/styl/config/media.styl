@@ -1,0 +1,291 @@
+@media screen and (min-width: 1860px)
+	.wrapper
+		padding 30px
+		border-radius 110px
+	.circle
+		&-big
+			posC($circleBig, 1860px, 858px)
+		&-medium
+			posC($circleMedium, 1860px, 858px)
+		&-small
+			posC($circleSmall, 1860px, 858px)
+			&-wrapper
+				left calc(1860px/ 2 - 65px * 1.5 / 2)
+				top calc(858px / 2 - -380px/2)
+$backPosLarge = 212px
+@media screen and (max-width: 1035px)
+	.nav
+		&.fixed_more
+			.nav__list
+				height auto
+				&_inner
+					height 0
+			.nav__item
+				height 75px
+			.nav__link
+				line-height 75px
+		&__navbar
+			display block
+		ul
+			display none
+			width 100%
+			height auto
+			flex-flow column wrap
+			ul
+				flex-flow column wrap
+				&-contact
+					left 0
+		li
+			border-bottom 3px solid $hoverColor
+			&:hover ul
+				flex-flow column
+				justify-content center
+				height auto
+				z-index 1
+				width 100%
+			&:last-child
+				ul
+					left 0
+		a
+			padding 0
+	.carousel
+		.right-pos
+			margin-left $backPosLarge
+		.left-pos
+			margin-left - $backPosLarge
+	.mCS-sq-bar.mCSB_scrollTools
+		right 20.5px
+	.mfp-close
+		right 21px	
+	.popup
+		max-width 880px
+	.circle-small-wrapper
+		left calc(100vw / 2 - 65px  / 2)
+@media screen and (max-width: $containerWidth)
+	.land-card
+		flex-direction column
+	.card_lands-left
+		margin-right 0
+	.about__article-bottom,.widget
+		padding 100px
+$TabletwSlide = 600px
+$TablethSlide = 355px
+$TabletBackPos = 0px
+@media screen and (max-width: 768px)
+	.popup-close
+		display block
+		right 55px
+		top 110px
+		a
+			color #f00
+	.btn__mobile_visible
+		display block
+	.btn__mobile_hidden
+		display none
+	.site-title
+		&_main
+			font-size 100px
+		&_subtitle
+			font-size 60px
+	section#carousel
+		width $TabletwSlide
+		height $TablethSlide
+		span
+			left $arrowsTablet=215px
+			top -14em
+			#prev
+				right $arrowsTablet
+			#next
+				left $arrowsTablet
+	.carousel
+		height $TablethSlide
+		li
+			width $TabletwSlide
+			height $TablethSlide
+		.right-pos
+			margin-left  $TabletBackPos
+		.left-pos
+			margin-left - $TabletBackPos
+	.hause-card__title
+		margin-top 20px
+	.popup
+		max-width 85vw
+	.connected-carousels .stage
+		flex-flow row wrap
+		margin 0
+	.connected-carousels .stage-aside
+		flex-flow row wrap
+	.connected-carousels .stage-aside__list
+		flex-flow column
+	.btn__room-content
+		margin-top 0
+		margin-left 40px
+	.room-content
+		flex-flow row wrap
+	.carousel-popup .carousel-stage
+		margin 0
+	.connected-carousels .carousel-stage
+		//height 56vw
+		margin 0
+	.connected-carousels .carousel-popup
+		flex 1 0 450px
+	.connected-carousels .carousel-popup img
+		width 85vw
+	.connected-carousels .next-stage
+		right 0
+	.map
+		width 90%
+		height 70vh
+		margin auto
+	.connected-carousels .next-stage, .connected-carousels .prev-stage
+		font-size 40px
+	.connected-carousels .prev-stage, .connected-carousels .next-stage
+		width 100px
+		height 400px
+@media screen and (max-width: 600px)
+	.popup
+		max-width 450px
+	.btn__room-content
+		margin-top 20px
+		margin-left 0
+	.connected-carousels .carousel-stage
+		height auto
+	.connected-carousels .stage-aside__list
+		padding 0
+	.connected-carousels .carousel-popup img
+		width 450px
+	.connected-carousels .carousel-popup
+		flex 1 0 300px
+	.connected-carousels .stage-aside
+		flex-flow column wrap
+	.connected-carousels .navigation
+		display none
+	.connected-carousels .next-stage, .connected-carousels .prev-stage
+		font-size 40px
+	.connected-carousels .prev-stage, .connected-carousels .next-stage
+		width 100px
+		height 400px
+	.marker
+		flex-flow row wrap
+		justify-content space-between
+		&__marker
+			margin 0
+$MobilewSlide = 340px
+$MobilehSlide = 240px
+@media screen and (max-width: 480px)
+	.popup
+			max-width 350px
+			th,td
+				vertical-align top !important
+	.room-content__col
+		flex 1 0 200px
+	.connected-carousels .prev-navigation
+		left 0
+		z-index 1
+	.connected-carousels .next-navigation
+		right 0
+		z-index 1
+	.marker
+		flex-flow column wrap
+	.btn__room-content
+		padding 8px 20px
+	.intro
+		background-size cover
+	.nav
+		margin 20px 0
+	.circle
+		display none
+	.site-title
+		&_main
+			font-size 70px	
+		&_subtitle
+			font-size 36px
+		&_subtitle-1,&_subtitle-2
+			display none
+	.description
+		h3
+			font-size 20px
+		p
+			font-size 16px
+	.section-text
+		font-size 16px
+	.section-title
+		font-size 20px
+	section#carousel
+		width $MobilewSlide
+		height $MobilehSlide
+		span
+			left $arrowsMobile=125px
+			top -9em
+			#prev,#next
+				size 43px 46px
+			#prev
+				right $arrowsMobile
+			#next
+				left $arrowsMobile
+	.carousel
+		height $MobilehSlide
+		li
+			width $MobilewSlide
+			height $MobilehSlide
+		.left-pos,.right-pos
+			display none
+	.dots
+		margin-top -40px
+	.land-card
+		padding 0
+	#lands
+		margin-top 100px
+	#cards
+		margin-top 0
+	.hause-card
+		
+		padding 0
+		&__description
+			padding 20px
+			flex 1 0 300px
+		&__title
+			margin-bottom 20px
+		&__img
+			height 290px
+			&_wrapper
+				flex 1 0 300px
+	.card
+		flex 1 0 300px
+		display flex
+		justify-content center
+		&__title
+			padding 20px 50px
+		&__container
+			width 345px
+			height 240px
+	.about
+		margin 0	
+		&__article
+			padding 20px
+			flex 1 0 300px
+		&__img
+			height 270px
+	.widget
+		padding 20px
+		margin 0
+		&__text
+			padding 0
+		&__wrapper
+			flex 1 0 300px
+	.contact
+		padding 10px
+		&__info
+			padding 10px 0
+	.connected-carousels .carousel-popup img
+		width 350px
+		height 270px
+	.connected-carousels .carousel-stage
+		height 260px
+	.connected-carousels .next-stage, .connected-carousels .prev-stage
+		color #9ed24d
+	.connected-carousels .next-stage, .connected-carousels .prev-stage
+		font-size 40px
+	.connected-carousels .prev-stage, .connected-carousels .next-stage
+		width 100px
+		height 260px

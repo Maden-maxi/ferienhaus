@@ -1,0 +1,30 @@
+include ./calendar-parts/mixins.jade
+.popup-wrapper.mfp-hide#popupCalendar
+	.popup
+		.popup-close: i.fa.fa-close
+		h3.section-title.section-title_popup Reservierungen
+		.calendar
+			include ./calendar-parts/months/january.jade
+			include ./calendar-parts/months/february.jade
+			include ./calendar-parts/months/march.jade
+			include ./calendar-parts/months/april.jade
+			include ./calendar-parts/months/may.jade
+			include ./calendar-parts/months/june.jade
+			include ./calendar-parts/months/july.jade
+			include ./calendar-parts/months/august.jade
+			include ./calendar-parts/months/september.jade
+			include ./calendar-parts/months/october.jade
+			include ./calendar-parts/months/november.jade
+			include ./calendar-parts/months/december.jade
+		.marker
+			.marker__marker
+				.marker__square.reserved
+				span.marker__description  - Belegt Platz
+			.marker__marker
+				.marker__square.discount
+				span.marker__description  - 25% Rabatt
+			.marker__marker
+				.marker__square.inactive
+				span.marker__description  - Nicht aktiv
+		include ./calendar-parts/price-table.jade
+		p.section-text.section-text_calendar Deleniti atque currupti, quos dolores eos, qui. Consectetur, adipisci velti, sed ut labore et dolore magnam aliquam quaerat voluptatem. Eligendi optio, cumque nihil impedit, quo voluptas assumenda est.

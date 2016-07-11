@@ -1,0 +1,110 @@
+.nav
+	width 100%
+	background #fff
+	z-index 999
+	top 0
+	left 0
+	margin 70px 0 120px
+	border-bottom 3px solid #e2e2e2
+	transition all .5s
+	&.fixed
+		position fixed
+		margin: 0
+	&.fixed_more
+		ul
+			height 75px
+			ul
+				height 0
+		li
+			height 75px
+		a
+			line-height 75px
+	&__navbar
+		cursor pointer
+		display none
+		margin 10px
+		background-color transparent
+		border 0
+		outline none
+		&-1,&-2,&-3
+			height 5px
+			background-color $hoverColor
+			display block
+			margin 6px 0
+			width 35px
+			transition all .3s
+		&_change &-1
+			transform rotate(-45deg) translate(-9px, 6px)
+		&_change &-2
+			opacity 0
+		&_change &-3
+			transform rotate(45deg) translate(-8px, -8px)
+	ul
+		display flex
+		flex-flow row wrap
+		justify-content space-around
+		centering()
+		height 125px
+		transition all .5s
+		ul
+			a
+				padding 0 23px
+				background-color #fff
+			&:hover + a
+				color $hoverColor
+				border-bottom 3px solid $hoverColor	
+			display flex
+			justify-content flex-start
+			width 500%
+			position absolute
+			overflow hidden
+			left 0
+			top 100%
+			height 0
+			padding-top 3px
+			transition all ease-out .5s .2s
+			&:first-child
+				left 0
+	li
+		position relative
+		background-color #fff
+		transition all ease-out .5s
+		&:hover ul
+			display flex
+			justify-content flex-start
+			size 500% 125px
+			max-width 1170px
+		&:last-child
+			&:hover
+				color #fff
+			ul
+				left auto
+				right -1px
+				top auto
+				width 460px
+			a
+				i
+					margin 0 5px
+					padding 5px
+				&:hover i:nth-child(1)
+					background-color $hoverColor
+					color #fff
+				&:hover	i:nth-child(2)
+					background-color $hoverColor
+					color #fff
+	a
+		cursor pointer
+		display inline-block
+		font 20px $circeB,sans-serif
+		color $titleColor
+		size 100%
+		line-height 125px
+		padding 0 13px
+		text-transform uppercase
+		text-decoration none
+		text-align center
+		transition color .5s
+		transition-property border-bottom-color
+		&:hover
+			color $hoverColor
+			border-bottom 3px solid $hoverColor

@@ -1,0 +1,54 @@
+$cellSize = 20px
+$con = 980px
+#popupCalendar
+	.reserved
+		background-color #83d33c
+	.discount
+		background-color #f1d6a1
+	.inactive
+		border 2px solid #9c8686
+.popup
+	max-width $con
+	margin auto
+.calendar
+	display flex
+	flex-flow row wrap
+	justify-content center
+.month
+	width $cellSize * 7
+	margin 0 23px 23px 0
+	&__row
+		display flex
+		font-size 0
+	&__name
+		font 16px $circeB,Arial,sans-serif
+		background-color #242424
+		color #fff
+		text-transform uppercase
+		text-align center
+	&__calendar
+		font-size 0
+	&__weekday
+		display inline-block
+		font 16px $circeB,Arial,sans-serif
+		text-align center
+		color #242424
+		width $cellSize
+		height $cellSize
+		&_weekend
+			color #dd5264
+.marker
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+	&__marker
+		display flex
+		align-items center
+		margin 0 25px
+	&__square
+		size 25px 16px
+		margin-right 4px
+		&.inactive
+			size 23px 14px
+	&__description
+		font 14px $circeL,Arial,sans-serif

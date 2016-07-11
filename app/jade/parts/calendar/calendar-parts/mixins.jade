@@ -1,0 +1,22 @@
+-
+	var weekDays = ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+
+mixin month(name)
+	.month
+		.month__name= name
+		.month__calendar
+			.month__row.month__row_day-week
+				each dayWeek in weekDays
+					if(dayWeek == 'S')
+						.month__weekday.month__weekday_weekend= dayWeek
+					else
+						.month__weekday= dayWeek
+mixin monthRow(days)
+	.month__row
+		each day,index in days
+			if index == 0
+				.month__weekday.month__weekday_weekend!= day
+			if index != 0
+				.month__weekday!= day
+			if index == 6
+				.month__weekday.month__weekday_weekend!= day

@@ -1,0 +1,23 @@
+-var nav = { ferienhaus:'Ferienhaus <i class="fa fa-caret-down"></i>', partyscheune:'Partyscheune', gartenanlage:'4500m²Gartenanlage', anfahrt_und_ueber_uns:'Anfahrt und Ueber uns', contacts:'<i class="fa fa-envelope"></i><i class="fa fa-phone"></i><i class="fa fa-caret-down"></i>'};
+nav.nav
+	button#navbar.nav__navbar
+		each bar in [1,2,3]
+			span(class='nav__navbar-#{bar}')
+	ul
+		each item,link in nav
+			if (item == nav.ferienhaus)
+				li
+					a(href="##{link}")!= item
+					ul
+						each room in [1,2,3,4]
+							li
+								a(href='#popupCarousel') Wohnung #{room}
+			if (item != nav.ferienhaus && item != nav.contacts) 
+				li: a(href="##{link}")!= item
+			if (item == nav.contacts)
+				li
+					a(href="##{link}")!= item
+					ul
+						each contact in ['info@alte-ziegelei.de', '03551/947324']
+							li
+								a!= contact

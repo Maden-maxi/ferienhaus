@@ -1,0 +1,20 @@
+-
+    var card = {
+        title:['Ferienhaus', 'Partyscheune', 'Gartenanlage', 'Haus-Plan'],
+        desc:[' Lorem ipsum dolor sit amet.', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, officia.','Lassen Sie sich entführen ins kleinste Mittelgebirge Deutschlands, einen Ort voller Mythen und Sagen in Mitten', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laborum ipsam totam.']
+        ,id:[1,2,3,4]
+    };
+#cards
+    .cards
+        - for(var i=0; i<card.id.length; i++)
+            .card.wow.fadeIn(data-wow-delay='#{i/4}s')
+                .card__container
+                    .card__front
+                        img(src='../img/rooms/room#{card.id[i]}.jpg', alt="#{i}")
+                        h3.card__title
+                            span.card__title-text Wohnung #{i+1}
+                            a(href='#popupCarousel').btn.btn_popupCarousel Ansehen und erleben
+                    .card__back
+                        h3.card__title #{card.title[i]}
+                        p.card__text #{card.desc[i]}
+                        a(href='#popupCarousel').card__button Ausshen

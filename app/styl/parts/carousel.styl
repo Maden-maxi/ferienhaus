@@ -1,0 +1,102 @@
+$wSlide = 800px
+$hSlide = 495px
+$backPos = 375px
+$visible = true
+#gallery
+	if($visible)
+		overflow visible
+	else
+		overflow hidden
+.description
+	centering()
+	padding 20px
+	h3,p
+		text-align center
+		margin 20px auto
+	h3
+		font 28px $circeB,Arial,sans-serif
+		color $titleColor
+		max-width 700px
+	p
+		font 20px $circeR,Arial,sans-serif
+		color $textColor
+		max-width 977px
+.carousel-slick
+	margin auto
+	max-width 1170px
+	img
+		width 370px
+		height 330px
+section#carousel
+	width $wSlide
+	height $hSlide
+	margin 0 auto
+	position relative
+	span
+		position relative
+		margin 0 auto
+		left $arrows=315px
+		top -20em
+		z-index 3
+		#prev,#next
+			cursor pointer
+			text-align center
+			color #fff
+			border none
+			position relative
+			size 83px 86px
+			background-color alpha(#000, .7)
+		#prev
+			right $arrows
+		#next
+			left $arrows
+.carousel
+	max-width 1000px
+	height $hSlide
+	li
+		width $wSlide
+		height $hSlide
+		background #333
+		display inline-block
+		transition all .3s ease-in-out
+		overflow hidden
+		img
+			size 100%
+		p
+			color white
+			font-weight bold
+			font-size 5em
+			text-align center
+			margin-top 1.175em
+	.items
+		position absolute
+
+	.main-pos
+		margin-left 0em
+		z-index 3
+		/*background-image: url('http://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+	.left-pos
+		opacity .3
+		margin-left - $backPos
+		z-index 2
+		transform scale(.75)
+	.back-pos
+		margin-left 0em
+		opacity .05
+		transform scale(.5)
+	.right-pos
+		opacity .3
+		margin-left  $backPos
+		z-index 2
+		transform scale(.75)
+.dots
+	display flex
+	justify-content center
+	margin-top -80px
+	.dot
+		margin 0 2px
+		size 14px
+		border-radius 14px
+		border 1px solid #bfbfbf
+	.dot.active
+		background #bfbfbf

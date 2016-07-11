@@ -1,0 +1,57 @@
+.month
+	.month__name September
+	.month__calendar
+		.month__row
+			each dayWeek in ['S', 'M', 'D', 'M', 'D', 'F', 'S']
+				if(dayWeek == 'S')
+					.month__weekday.month__weekday_weekend= dayWeek
+				else
+					.month__weekday= dayWeek
+		.month__row
+			.month__weekday.month__weekday_weekend
+			.month__weekday
+			.month__weekday
+			.month__weekday
+			.month__weekday 1
+			.month__weekday 2
+			.month__weekday.month__weekday_weekend 3
+		.month__row
+			.month__weekday.month__weekday_weekend 4
+			.month__weekday 5
+			.month__weekday 6
+			.month__weekday 7
+			.month__weekday 8
+			.month__weekday 9
+			.month__weekday.month__weekday_weekend 10
+		.month__row
+			.month__weekday.month__weekday_weekend 11
+			.month__weekday 12
+			.month__weekday 13
+			.month__weekday 14
+			.month__weekday 15
+			.month__weekday 16
+			.month__weekday.month__weekday_weekend 17
+		.month__row
+			.month__weekday.month__weekday_weekend 18
+			.month__weekday 19
+			.month__weekday 20
+			.month__weekday 21
+			.month__weekday 22
+			.month__weekday 23
+			.month__weekday.month__weekday_weekend 24
+		.month__row
+			.month__weekday.month__weekday_weekend 25
+			.month__weekday 26
+			.month__weekday 27
+			.month__weekday 28
+			.month__weekday 29
+			.month__weekday 30
+			.month__weekday.month__weekday_weekend
+		.month__row
+			.month__weekday.month__weekday_weekend
+			.month__weekday
+			.month__weekday
+			.month__weekday
+			.month__weekday
+			.month__weekday
+			.month__weekday.month__weekday_weekend

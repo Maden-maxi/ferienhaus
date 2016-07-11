@@ -1,0 +1,6 @@
+centering()
+	max-width $containerWidth
+	margin 0px auto
+posC(size, width=100vw, height=100vh)
+	left unquote('calc('+ width +'/ 2 - ' + size + '/2)')
+	top unquote('calc('+height+' / 2 - ' + size + '/2)')

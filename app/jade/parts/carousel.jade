@@ -1,0 +1,19 @@
+section#gallery
+	.description.wow.fadeInDown
+		h3 „Die alte Ziegelei im Dreiländereck“ eine besondere Unterkunft an einem besonderen Ort.
+		p Lassen Sie sich entführen ins kleinste Mittelgebirge Deutschlands, einen Ort voller Mythen und Sagen in Mitten unberührter und urtümlicher Landschaft. Entdecken Sie einen Schmelztiegel der Kulturen, wo Völkerverständigung über Jahrhunderte Grundlage des Wohlstandes war. Unsere alte Ziegelei als umfunktioniertes Industrieobjekt verkörpert die Seele dieser unbekannten Kulturlandschaft wie kaum ein Zweites.
+	section.wow.zoomIn#carousel(data-wow-delay='0.5s')
+		ul.carousel
+				li.items.main-pos#1: img(src="../img/carousel/hause0.jpg", alt="hause0")
+				li.items.right-pos#2: img(src="../img/carousel/hause1.jpg", alt="hause1")
+				li.items.back-pos#3: img(src="../img/carousel/hause2.jpg", alt="hause2")
+				li.items.back-pos#4: img(src="../img/carousel/hause3.jpg", alt="hause3")
+				li.items.back-pos#5: img(src="../img/carousel/hause4.jpg", alt="hause4")
+				li.items.back-pos#6: img(src="../img/carousel/hause5.jpg", alt="hause5")
+				li.items.back-left#7: img(src="../img/carousel/hause6.jpg", alt="hause6")
+		span
+			button(type='button', id='prev'): i.fa.fa-arrow-left
+			button(type='button', id='next'): i.fa.fa-arrow-right
+		ul.dots
+			//-each dot in [1,2,3,4,5,6,7]
+				.dot(id="dot-#{dot}")

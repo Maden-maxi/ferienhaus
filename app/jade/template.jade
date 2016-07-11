@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru")
+	head
+		block meta
+			meta(charset="UTF-8")
+		block link
+			link(rel="stylesheet", href="css/styles.css")
+		block title
+			title Default title
+	body
+		block content
+		script(type="text/javascript", src="http://maps.google.com/maps/api/js?AIzaSyC_mGHVTNn-1YUH6V19WnviONvLiAeUM1k")
+		//build:js js/vendor.js
+		//bower:js
+		//endbower
+		//endbuild
+		//build:js js/main.js
+		script(src='js/carousel.js')
+		script(src='js/card.js')
+		script(src='js/fix-top-menu.js')
+		script(src='js/map.js')
+		script(src='js/keyscroll.js')
+		//script(src='js/popup-carousel.js')
+		script(src='js/popup-car.js')
+		//endbuild

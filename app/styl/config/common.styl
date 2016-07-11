@@ -1,0 +1,57 @@
+*,*:before,*:after
+	box-sizing border-box
+	
+.wrapper
+	max-width $wrapperWidth
+	margin 0 auto
+.section
+	&-title
+		color $titleColor
+		font 28px $circeB,Arial,sans-serif
+		text-transform uppercase
+		&_popup
+			margin 20px 20px 20px 20px
+			text-transform none
+	&-text
+		color $textColor
+		font $textSize $circeR,Arial,sans-serif
+		&_calendar
+			color #000
+			font-size 16px
+			padding 0 90px
+.btn
+	font 16px $circeB,Arial,sans-serif
+	background-color transparent
+	padding 10px 15px
+	align-self center
+	color #fff
+	border 2px solid #fff
+	cursor pointer
+	transition all .5s
+	z-index 1
+	text-decoration none
+	&_reserve
+		font-size 21px
+		padding 8px 13px
+	&:hover
+		background-color $hoverColor
+		border 2px solid $hoverColor
+	&__to-top
+		display none
+		padding 1px
+		fixed bottom 50px right 50px
+		color alpha(#000, .7)
+		transition .6s
+		size 58px
+		border-radius 100%
+		background #1a1a18 url('../img/arrow_down.png') 0 0 no-repeat
+		transform rotate(180deg)
+		box-shadow 0 0px 10px rgba(0,0,0,.3)
+		&:hover
+			background-color $hoverColor
+	&__room-content
+		@extend .btn_reserve
+		padding 8px 43.5px
+		margin-top 10px
+	&__mobile_visible
+		display none
