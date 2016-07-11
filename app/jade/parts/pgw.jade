@@ -1,0 +1,14 @@
+-
+	var imgs = {
+		img1_jpg: 'image one',
+		img2_jpg: 'image two',
+		img3_jpg: 'image three',
+		img4_jpg: 'image four',
+		img5_jpg: 'image five',
+		img6_jpg: 'image six'
+	}
+.popup
+	.popup-carousel
+		ul.pgwSlideshow
+			each description,img in imgs
+				li: img(src="img/popup-carousel/#{img.replace('_','.')}", alt="#{description}")

@@ -25,6 +25,7 @@
     <!--endbuild-->
     <!--build:css css/main.css-->
     <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="css/pgwslideshow.css">
     <link rel="stylesheet" href="css/style.css">
     <!--endbuild-->
     <title>Ferienhaus</title>
@@ -218,6 +219,18 @@
           </ul>
         </address>
       </footer>
+      <div class="popup">
+        <div class="popup-carousel">
+          <ul class="pgwSlideshow">
+            <li><img src="img/popup-carousel/img1.jpg" alt="image one"></li>
+            <li><img src="img/popup-carousel/img2.jpg" alt="image two"></li>
+            <li><img src="img/popup-carousel/img3.jpg" alt="image three"></li>
+            <li><img src="img/popup-carousel/img4.jpg" alt="image four"></li>
+            <li><img src="img/popup-carousel/img5.jpg" alt="image five"></li>
+            <li><img src="img/popup-carousel/img6.jpg" alt="image six"></li>
+          </ul>
+        </div>
+      </div>
       <div id="popupCarousel" class="popup-wrapper mfp-hide">
         <div class="popup">
           <div class="popup-close"><i class="fa fa-close"></i></div>
@@ -1278,12 +1291,13 @@
     <!--endbower-->
     <!--endbuild-->
     <!--build:js js/main.js-->
+    <script src="js/pgwslideshow.js"></script>
+    <script src="js/pgw.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/card.js"></script>
     <script src="js/fix-top-menu.js"></script>
     <script src="js/map.js"></script>
     <script src="js/keyscroll.js"></script>
-    <!--script(src='js/popup-carousel.js')-->
     <script src="js/popup-car.js"></script>
     <!--endbuild-->
   </body>
